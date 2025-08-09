@@ -1,19 +1,19 @@
-After hours of fiddling my brain hurtz
+After hours of fiddling my brain hurtz - Open as Root working in Ubuntu using wayland.
 
 How to get context menus for OpenAsRoot and 7Zip tools working in Dolphin file manager.
 
 sudo apt-get install dolphin
-
 sudo apt install konsole
 
 NOTE The terminal used in dolphin is konsole.... its bell sound does not work out of the box, so configure it
-Using Dolphin open a konsole terminal window....
-	righthand edge, click the menu icon ... Settings... Configure_Notifications...
-	Bell in Non-Focused Session --> /usr/share/sounds/sound-icons/finish
-	Bell in Focused Session     --> /usr/share/sounds/sound-icons/finish
+   Using Dolphin open a konsole terminal window....
+      Righthand edge, click the menu icon ... Settings... Configure_Notifications...
+	    Bell in Non-Focused Session --> /usr/share/sounds/sound-icons/finish
+	    Bell in Focused Session     --> /usr/share/sounds/sound-icons/finish
 	
-	and click the "Play a sound" tickbox as well for both
+	  and click the "Play a sound" tickbox as well for both
 
-To install these new context menu actions...
+To install these context menu action files...
    copy the "*.desktop" files into this folder --> "~/.local/share/kio/servicemenus/" (you may have to create that folder).
 
+Relaunch dolphin afterwards and hopefully you can rightclick "Open as Root" which will prompt for password followed by it launching dolphin in root mode.
